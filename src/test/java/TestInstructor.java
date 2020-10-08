@@ -36,11 +36,11 @@ Assert.assertEquals(expected, actual, delta);
    Student student3 = new Student(780L, "Wayne", 0.0);
    Student[] students = {student1, student2, student3};
 
-   instructor.lecture(students, 70);
-   double expected = student1.getTotalStudyTime();
-   double actual = 210;
+   instructor.lecture(students, 30); //splitting up the time evenly. dividing the number of hours by student. 30/3 = 10hrs
+   double expected = student1.getTotalStudyTime(); //student 1 started off with 7 / 10 = 17
+   double actual = 17.0;
 
-   Assert.assertEquals(expected, actual);
+   Assert.assertEquals(expected, actual, 0.0);
 
     }
 }

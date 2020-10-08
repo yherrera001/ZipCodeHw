@@ -4,10 +4,13 @@ public class Instructor extends Person implements ITeacher {
         super(id, name);
     }
 
+    @Override
     public void teach(ILearner learner, double numberOfHours){
         learner.learn(numberOfHours);
     }
 
+
+    @Override
     public void lecture(ILearner[] learners, double numberOfHours){
 
         for (ILearner learner : learners) {
@@ -15,6 +18,5 @@ public class Instructor extends Person implements ITeacher {
             learner.learn(numberOfHoursPerLearner);
 
         }
-
     }
 }

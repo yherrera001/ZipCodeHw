@@ -9,10 +9,10 @@ public class TestPeople {
     @Test
 
     public void testAdd() {
+        People people = new People();
         //WHEN
         List<Person> list = new ArrayList<Person>();
         Person person = new Person(6890, "Terry");
-        People people = new People();
         people.add(person);
         list.add(person);
 

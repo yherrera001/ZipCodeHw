@@ -5,3 +5,4 @@ public interface ITeacher {
     void lecture(ILearner[] learners, double numberOfHours);
 
 }
+
